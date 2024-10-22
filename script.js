@@ -1,161 +1,3 @@
-// "use strict";
-// const addToCartBtns = document.querySelectorAll(".addtocart-btns");
-// const addItemsBtns = document.querySelectorAll(".additems-btns");
-// const plusIcons = document.querySelectorAll(".plus-icons");
-// const minusIcons = document.querySelectorAll(".minus-icons");
-// const numbers = document.querySelectorAll(".numbers");
-// const addingItems = document.querySelectorAll(".adding-items");
-// const itemsselected = document.querySelectorAll(".items-selected");
-// const totalCalc = document.querySelectorAll(".total-cal");
-// const price = document.querySelectorAll(".price");
-// const close = document.querySelectorAll(".close")
-
-// const addToCartBtnOne = document.querySelector(".addtocart-btn-1");
-// const addItemsBtnOne = document.querySelector(".additems-btn-1");
-// const plusIconOne = document.querySelector(".plus-icon-1");
-// const minusIconOne = document.querySelector(".minus-icon-1");
-// const numberOne = document.querySelector(".number-1");
-// const addingItemsOne = document.querySelector(".adding-items--1");
-// const itemsselectedOne = document.querySelector(".items-selected-1");
-// const totalCalcOne = document.querySelector(".total-cal-1");
-// const priceOne = document.querySelector(".price-1");
-// const closeOne = document.querySelector(".close-1");
-
-// const grandTotal = document.querySelector(".grand-total");
-// const emptyCart = document.querySelector(".emptyaddtocart-cont");
-// const cartDisplay = document.querySelector(".cart-display");
-
-// let increseOne = Number(0);
-// addToCartBtnOne.addEventListener("click", (e) => {
-//   addItemsBtnOne.classList.remove("hidden");
-//   addToCartBtnOne.classList.add("hidden");
-//   emptyCart.classList.add("hidden");
-//   cartDisplay.classList.remove("hidden");
-//   numberOne.textContent = 0;
-// });
-
-// let storedValueOne;
-// function handleValueChangeOne(newValueOne) {
-//   storedValueOne = newValueOne;
-//   totalCalcOne.textContent = (storedValueOne * 6.5).toFixed(2);
-//   itemsselectedOne.textContent = storedValueOne;
-//   if (storedValueOne > 0) {
-//     addingItemsOne.classList.remove("hidden");
-//   }
-//   if (storedValueOne < 1) {
-//     addingItemsOne.classList.add("hidden");
-//   }
-//   console.log(storedValueOne);
-// }
-// const oneaddingItems = function (callbackOne) {
-//   closeOne.addEventListener("click", (c) => {
-//     addItemsBtnOne.classList.add("hidden");
-//     addToCartBtnOne.classList.remove("hidden");
-//     addingItemsOne.classList.add("hidden");
-
-//     increseOne = Number(0);
-//   });
-//   plusIconOne.addEventListener("click", (e) => {
-//     increseOne++;
-//     let valueOne = (numberOne.textContent = increseOne);
-//     if (valueOne > 0) {
-//       minusIconOne.classList.remove("invisible");
-//     } else {
-//       minusIconOne.classList.add("invisible");
-//     }
-
-//     callbackOne(valueOne);
-//   });
-
-//   minusIconOne.addEventListener("click", (e) => {
-//     increseOne--;
-//     let valueOne = (numberOne.textContent = increseOne);
-//     if (valueOne === 0) {
-//       addItemsBtnOne.classList.add("hidden");
-//       addToCartBtnOne.classList.remove("hidden");
-//     }
-//     if (valueOne > 0) {
-//       minusIconOne.classList.remove("invisible");
-//     } else {
-//       minusIconOne.classList.add("invisible");
-//     }
-
-//     callbackOne(valueOne);
-//   });
-// };
-// oneaddingItems(handleValueChangeOne);
-
-// const addToCartBtnTwo = document.querySelector(".addtocart-btn-2");
-// const addItemsBtnTwo = document.querySelector(".additems-btn-2");
-// const plusIconTwo = document.querySelector(".plus-icon-2");
-// const minusIconTwo = document.querySelector(".minus-icon-2");
-// const numberTwo = document.querySelector(".number-2");
-// const addingItemsTwo = document.querySelector(".adding-items--2");
-// const itemsselectedTwo = document.querySelector(".items-selected-2");
-// const totalCalcTwo = document.querySelector(".total-cal-2");
-// const priceTwo = document.querySelector(".price-2");
-// const closeTwo = document.querySelector(".close-2");
-
-// let increseTwo = Number(0);
-// addToCartBtnTwo.addEventListener("click", (e) => {
-//   addItemsBtnTwo.classList.remove("hidden");
-//   addToCartBtnTwo.classList.add("hidden");
-//   emptyCart.classList.add("hidden");
-//   cartDisplay.classList.remove("hidden");
-//   numberTwo.textContent = 0;
-// });
-
-// let storedValueTwo;
-// function handleValueChange(newValueTwo) {
-//   storedValueTwo = newValueTwo;
-//   totalCalcTwo.textContent = (storedValueTwo * 7.0).toFixed(2);
-//   itemsselectedTwo.textContent = storedValueTwo;
-//   if (storedValueTwo > 0) {
-//     addingItemsTwo.classList.remove("hidden");
-//   }
-//   if (storedValueTwo < 1) {
-//     addingItemsTwo.classList.add("hidden");
-//   }
-//   console.log(storedValueTwo);
-// }
-// const twoaddingItems = function (callback) {
-//   closeTwo.addEventListener("click", (c) => {
-//     addItemsBtnTwo.classList.add("hidden");
-//     addToCartBtnTwo.classList.remove("hidden");
-//     addingItemsTwo.classList.add("hidden");
-
-//     increseTwo = Number(0);
-//   });
-//   plusIconTwo.addEventListener("click", (e) => {
-//     increseTwo++;
-//     let value = (numberTwo.textContent = increseTwo);
-//     if (value > 0) {
-//       minusIconTwo.classList.remove("invisible");
-//     } else {
-//       minusIconTwo.classList.add("invisible");
-//     }
-
-//     callback(value);
-//   });
-
-//   minusIconTwo.addEventListener("click", (e) => {
-//     increseTwo--;
-//     let value = (numberTwo.textContent = increseTwo);
-//     if (value === 0) {
-//       addItemsBtnTwo.classList.add("hidden");
-//       addToCartBtnTwo.classList.remove("hidden");
-//     }
-//     if (value > 0) {
-//       minusIconTwo.classList.remove("invisible");
-//     } else {
-//       minusIconTwo.classList.add("invisible");
-//     }
-
-//     callback(value);
-//   });
-// };
-// twoaddingItems(handleValueChange);
-
 "use strict";
 
 const addToCartBtnOne = document.querySelector(".addtocart-btn-1");
@@ -332,7 +174,6 @@ function updateGrandTotal() {
   orderGrandTotal.textContent = grandTotalValue.toFixed(2);
 }
 
-// Function to handle item actions and grand total
 function handleItemActions(
   addToCartBtn,
   addItemsBtn,
@@ -406,7 +247,6 @@ function handleItemActions(
     handleValueChange(increase);
   });
 
-  // Minus icon functionality
   minusIcon.addEventListener("click", (e) => {
     if (increase > 0) {
       increase--;
@@ -423,6 +263,7 @@ function handleItemActions(
 }
 
 // Call the function for each item
+// For 1
 handleItemActions(
   addToCartBtnOne,
   addItemsBtnOne,
@@ -440,7 +281,7 @@ handleItemActions(
   dImgOne,
   mImgOne
 );
-
+// For 2
 handleItemActions(
   addToCartBtnTwo,
   addItemsBtnTwo,
@@ -458,7 +299,7 @@ handleItemActions(
   dImgTwo,
   mImgTwo
 );
-
+// For 3
 handleItemActions(
   addToCartBtnThree,
   addItemsBtnThree,
@@ -476,7 +317,7 @@ handleItemActions(
   dImgThree,
   mImgThree
 );
-
+// For 4
 handleItemActions(
   addToCartBtnFour,
   addItemsBtnFour,
@@ -588,6 +429,7 @@ handleItemActions(
   dImgNine,
   mImgNine
 );
+//confirming order and starting new order
 const confirmBtn = document.querySelector(".confirm-order-btn");
 const orderConfirmed = document.querySelector(".order-confirmed");
 const body = document.querySelector("body");
@@ -602,3 +444,162 @@ startNewOrder.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.reload();
 });
+
+// //////////////
+// "use strict";
+// const addToCartBtns = document.querySelectorAll(".addtocart-btns");
+// const addItemsBtns = document.querySelectorAll(".additems-btns");
+// const plusIcons = document.querySelectorAll(".plus-icons");
+// const minusIcons = document.querySelectorAll(".minus-icons");
+// const numbers = document.querySelectorAll(".numbers");
+// const addingItems = document.querySelectorAll(".adding-items");
+// const itemsselected = document.querySelectorAll(".items-selected");
+// const totalCalc = document.querySelectorAll(".total-cal");
+// const price = document.querySelectorAll(".price");
+// const close = document.querySelectorAll(".close")
+
+// const addToCartBtnOne = document.querySelector(".addtocart-btn-1");
+// const addItemsBtnOne = document.querySelector(".additems-btn-1");
+// const plusIconOne = document.querySelector(".plus-icon-1");
+// const minusIconOne = document.querySelector(".minus-icon-1");
+// const numberOne = document.querySelector(".number-1");
+// const addingItemsOne = document.querySelector(".adding-items--1");
+// const itemsselectedOne = document.querySelector(".items-selected-1");
+// const totalCalcOne = document.querySelector(".total-cal-1");
+// const priceOne = document.querySelector(".price-1");
+// const closeOne = document.querySelector(".close-1");
+
+// const grandTotal = document.querySelector(".grand-total");
+// const emptyCart = document.querySelector(".emptyaddtocart-cont");
+// const cartDisplay = document.querySelector(".cart-display");
+
+// let increseOne = Number(0);
+// addToCartBtnOne.addEventListener("click", (e) => {
+//   addItemsBtnOne.classList.remove("hidden");
+//   addToCartBtnOne.classList.add("hidden");
+//   emptyCart.classList.add("hidden");
+//   cartDisplay.classList.remove("hidden");
+//   numberOne.textContent = 0;
+// });
+
+// let storedValueOne;
+// function handleValueChangeOne(newValueOne) {
+//   storedValueOne = newValueOne;
+//   totalCalcOne.textContent = (storedValueOne * 6.5).toFixed(2);
+//   itemsselectedOne.textContent = storedValueOne;
+//   if (storedValueOne > 0) {
+//     addingItemsOne.classList.remove("hidden");
+//   }
+//   if (storedValueOne < 1) {
+//     addingItemsOne.classList.add("hidden");
+//   }
+//   console.log(storedValueOne);
+// }
+// const oneaddingItems = function (callbackOne) {
+//   closeOne.addEventListener("click", (c) => {
+//     addItemsBtnOne.classList.add("hidden");
+//     addToCartBtnOne.classList.remove("hidden");
+//     addingItemsOne.classList.add("hidden");
+
+//     increseOne = Number(0);
+//   });
+//   plusIconOne.addEventListener("click", (e) => {
+//     increseOne++;
+//     let valueOne = (numberOne.textContent = increseOne);
+//     if (valueOne > 0) {
+//       minusIconOne.classList.remove("invisible");
+//     } else {
+//       minusIconOne.classList.add("invisible");
+//     }
+
+//     callbackOne(valueOne);
+//   });
+
+//   minusIconOne.addEventListener("click", (e) => {
+//     increseOne--;
+//     let valueOne = (numberOne.textContent = increseOne);
+//     if (valueOne === 0) {
+//       addItemsBtnOne.classList.add("hidden");
+//       addToCartBtnOne.classList.remove("hidden");
+//     }
+//     if (valueOne > 0) {
+//       minusIconOne.classList.remove("invisible");
+//     } else {
+//       minusIconOne.classList.add("invisible");
+//     }
+
+//     callbackOne(valueOne);
+//   });
+// };
+// oneaddingItems(handleValueChangeOne);
+
+// const addToCartBtnTwo = document.querySelector(".addtocart-btn-2");
+// const addItemsBtnTwo = document.querySelector(".additems-btn-2");
+// const plusIconTwo = document.querySelector(".plus-icon-2");
+// const minusIconTwo = document.querySelector(".minus-icon-2");
+// const numberTwo = document.querySelector(".number-2");
+// const addingItemsTwo = document.querySelector(".adding-items--2");
+// const itemsselectedTwo = document.querySelector(".items-selected-2");
+// const totalCalcTwo = document.querySelector(".total-cal-2");
+// const priceTwo = document.querySelector(".price-2");
+// const closeTwo = document.querySelector(".close-2");
+
+// let increseTwo = Number(0);
+// addToCartBtnTwo.addEventListener("click", (e) => {
+//   addItemsBtnTwo.classList.remove("hidden");
+//   addToCartBtnTwo.classList.add("hidden");
+//   emptyCart.classList.add("hidden");
+//   cartDisplay.classList.remove("hidden");
+//   numberTwo.textContent = 0;
+// });
+
+// let storedValueTwo;
+// function handleValueChange(newValueTwo) {
+//   storedValueTwo = newValueTwo;
+//   totalCalcTwo.textContent = (storedValueTwo * 7.0).toFixed(2);
+//   itemsselectedTwo.textContent = storedValueTwo;
+//   if (storedValueTwo > 0) {
+//     addingItemsTwo.classList.remove("hidden");
+//   }
+//   if (storedValueTwo < 1) {
+//     addingItemsTwo.classList.add("hidden");
+//   }
+//   console.log(storedValueTwo);
+// }
+// const twoaddingItems = function (callback) {
+//   closeTwo.addEventListener("click", (c) => {
+//     addItemsBtnTwo.classList.add("hidden");
+//     addToCartBtnTwo.classList.remove("hidden");
+//     addingItemsTwo.classList.add("hidden");
+
+//     increseTwo = Number(0);
+//   });
+//   plusIconTwo.addEventListener("click", (e) => {
+//     increseTwo++;
+//     let value = (numberTwo.textContent = increseTwo);
+//     if (value > 0) {
+//       minusIconTwo.classList.remove("invisible");
+//     } else {
+//       minusIconTwo.classList.add("invisible");
+//     }
+
+//     callback(value);
+//   });
+
+//   minusIconTwo.addEventListener("click", (e) => {
+//     increseTwo--;
+//     let value = (numberTwo.textContent = increseTwo);
+//     if (value === 0) {
+//       addItemsBtnTwo.classList.add("hidden");
+//       addToCartBtnTwo.classList.remove("hidden");
+//     }
+//     if (value > 0) {
+//       minusIconTwo.classList.remove("invisible");
+//     } else {
+//       minusIconTwo.classList.add("invisible");
+//     }
+
+//     callback(value);
+//   });
+// };
+// twoaddingItems(handleValueChange);
