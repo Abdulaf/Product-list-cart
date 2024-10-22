@@ -591,9 +591,14 @@ handleItemActions(
 const confirmBtn = document.querySelector(".confirm-order-btn");
 const orderConfirmed = document.querySelector(".order-confirmed");
 const body = document.querySelector("body");
+const startNewOrder = document.querySelector(".new");
 body.classList.remove("overflow-hidden");
 confirmBtn.addEventListener("click", function (e) {
   e.preventDefault();
   orderConfirmed.classList.remove("hidden");
   body.classList.add("overflow-hidden");
+});
+startNewOrder.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.reload();
 });
