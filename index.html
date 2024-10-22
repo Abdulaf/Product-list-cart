@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Product-List-card</title>
+  </head>
+  <body class="bg-lightest font-redHat p-4 relative overflow-hidden">
+    <div
+      class="flex flex-col gap-4 container mx-auto md:my-14 my-10 md:flex-row"
+    >
+      <h1 class="text-3xl font-bold text-darkest ml-4 absolute">Desserts</h1>
+      <div
+        class="grid md:grid-cols-3 md:w-3/5 p-2 bg-lightest gap-x-5 gap-y-8 mt-14"
+      >
+        <!-- Box 1 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-waffle-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-1"
+              alt=""
+            />
+            <img
+              src="assets/images/image-waffle-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-1"
+              alt=""
+            />
+            <!--  md:-->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-1 additems-btns"
+            >
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-1 minus-icons"
+                alt=""
+              />
+              <span class="number-1 numbers text-white"></span>
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-1 plus-icons"
+                alt=""
+              />
+            </div>
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-1 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-lg">
+            Waffle
+          </h1>
+          <p class="text-darkest font-bold text-lg">Waffle with Berries</p>
+          <p class="text-customRed font-bold text-xl">$<span>6.50</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 2 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-creme-brulee-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-2"
+              alt=""
+            />
+            <img
+              src="assets/images/image-creme-brulee-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-2"
+              alt=""
+            />
+            <!--  md:-->
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-2 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-2 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-2 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-2 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-2 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Crème Brûlée
+          </h1>
+          <p class="text-darkest font-bold text-lg">
+            Vanilla Bean Crème Brûlée
+          </p>
+          <p class="text-customRed font-bold text-xl">$<span>7.00</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 3 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-macaron-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-3"
+              alt=""
+            />
+            <img
+              src="assets/images/image-macaron-desktop.jpg"
+              class="block md:hidden rounded-lg w-full mimg-3"
+              alt=""
+            />
+            <!--  md:-->
+            <div
+              class="flex additems-btn-3 justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden"
+            >
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-3"
+                alt=""
+              />
+              <span class="number-3 text-white"></span>
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-3"
+                alt=""
+              />
+            </div>
+            <div
+              class="flex gap-4 addtocart-btn-3 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-lg">
+            Macaron
+          </h1>
+          <p class="text-darkest font-bold text-lg">Macaron Mix of Five</p>
+          <p class="text-customRed font-bold text-xl">$<span>8.00</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 4 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-tiramisu-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-4"
+              alt=""
+            />
+            <img
+              src="assets/images/image-tiramisu-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-4"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-4 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-4 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-4 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-4 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-4 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Tiramisu
+          </h1>
+          <p class="text-darkest font-bold text-lg">Classic Tiramisu</p>
+          <p class="text-customRed font-bold text-xl">$<span>5.50</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 5 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-baklava-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-5"
+              alt=""
+            />
+            <img
+              src="assets/images/image-baklava-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-5"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-5 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-5 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-5 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-5 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-5 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Baklava
+          </h1>
+          <p class="text-darkest font-bold text-lg">Pistachio Baklava</p>
+          <p class="text-customRed font-bold text-xl">$<span>4.00</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 6 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-meringue-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-6"
+              alt=""
+            />
+            <img
+              src="assets/images/image-meringue-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-6"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-6 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-6 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-6 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-6 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-6 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Pie
+          </h1>
+          <p class="text-darkest font-bold text-lg">Lemon Meringue Pie</p>
+          <p class="text-customRed font-bold text-xl">$<span>5.00</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 7 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-cake-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-7"
+              alt=""
+            />
+            <img
+              src="assets/images/image-cake-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-7"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-7 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-7 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-7 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-7 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-7 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Cake
+          </h1>
+          <p class="text-darkest font-bold text-lg">Red Velvet Cake</p>
+          <p class="text-customRed font-bold text-xl">$<span>4.50</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 8 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-brownie-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-8"
+              alt=""
+            />
+            <img
+              src="assets/images/image-brownie-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-8"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-8 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-8 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-8 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-8 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-8 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Tiramisu
+          </h1>
+          <p class="text-darkest font-bold text-lg">Salted Caramel Brownie</p>
+          <p class="text-customRed font-bold text-xl">$<span>5.50</span></p>
+        </div>
+        <!-- End -->
+        <!-- Box 9 -->
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center">
+            <img
+              src="assets/images/image-panna-cotta-desktop.jpg"
+              class="rounded-lg md:block hidden w-full dimg-9"
+              alt=""
+            />
+            <img
+              src="assets/images/image-panna-cotta-mobile.jpg"
+              class="block md:hidden rounded-lg w-full mimg-9"
+              alt=""
+            />
+            <!-- additems-btn -->
+            <div
+              class="flex justify-between gap-10 bg-customRed -translate-y-1/2 py-2 px-3 rounded-full hidden additems-btn-9 additems-btns"
+            >
+              <!-- minus-icons -->
+              <img
+                src="assets/images/icon-decrement-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 minus-icon-9 minus-icons"
+                alt=""
+              />
+              <!-- numbers -->
+              <span class="number-9 numbers text-white"></span>
+              <!-- plus-icons -->
+              <img
+                src="assets/images/icon-increment-quantity.svg"
+                class="border opacity-80 rounded-full w-6 h-6 p-1 plus-icon-9 plus-icons"
+                alt=""
+              />
+            </div>
+            <!-- addtocart-btns -->
+            <div
+              class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-9 addtocart-btns"
+            >
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+              <p class="text-darkest">Add to Cart</p>
+            </div>
+          </div>
+          <h1 class="text-darkest font-semibold text-opacity-70 text-base">
+            Tiramisu
+          </h1>
+          <p class="text-darkest font-bold text-lg">Vanilla Panna Cotta</p>
+          <p class="text-customRed font-bold text-xl">$<span>6.50</span></p>
+        </div>
+        <!-- End -->
+      </div>
+      <!-- Add to cart -->
+      <div class="md:w-1/3 flex flex-col">
+        <div class="bg-white flex flex-col p-6 rounded-lg gap-4">
+          <h1 class="text-start text-2xl font-bold text-customRed">
+            Your Cart
+          </h1>
+          <!-- Empty add to cart -->
+          <div
+            class="flex flex-col justify-center items-center emptyaddtocart-cont"
+          >
+            <img
+              src="assets/images/illustration-empty-cart.svg"
+              class="max-w-[150px]"
+              alt=""
+            />
+            <p class="text-dark text-opacity-80 font-bold">
+              Your added items will appear here
+            </p>
+          </div>
+          <!-- Cart Display -->
+          <div class="w-full flex hidden flex-col gap-4 cart-display">
+            <!-- Items -->
+            <div class="max-h-64 overflow-y-auto">
+              <!-- Cart item - 1 -->
+              <div
+                class="flex hidden items-center adding-items--1 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-waffle-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Waffle with Berries</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <span class="items-selected-1 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">6.50</span>
+                    </p>
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-1 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-1 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 2 -->
+
+              <div
+                class="flex hidden items-center adding-items--2 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-creme-brulee-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">
+                    Vanilla Bean Crème Brûlée
+                  </h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <span class="items-selected-2 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-2 price">7.00</span>
+                    </p>
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-2 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-2 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 3 -->
+
+              <div
+                class="flex hidden items-center adding-items--3 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-macaron-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Macaron mix of Five</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-3 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">8.00</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-3 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-3 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+
+              <!-- Cart item - 4 -->
+
+              <div
+                class="flex hidden items-center adding-items--4 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-tiramisu-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Classic Tiramisu</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-4 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">5.50</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-4 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-4 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 5 -->
+
+              <div
+                class="flex hidden items-center adding-items--5 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-baklava-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Pistachio Baklava</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-5 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">4.00</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-5 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-5 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 6 -->
+
+              <div
+                class="flex hidden items-center adding-items--6 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-meringue-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Lemon Meringue Pie</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-6 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">5.00</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-6 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-6 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 7 -->
+
+              <div
+                class="flex hidden items-center adding-items--7 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-cake-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Red Velvet Cake</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-7 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">4.50</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-7 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-7 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 8 -->
+
+              <div
+                class="flex hidden items-center adding-items--8 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-brownie-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Salted Caramel Brownie</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-8 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">5.50</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-8 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-8 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+              <!-- Cart item - 9 -->
+
+              <div
+                class="flex hidden items-center adding-items--9 adding-items border-b py-4"
+              >
+                <img
+                  src="assets/images/image-panna-cotta-thumbnail.jpg"
+                  class="h-10 w-10 mr-5"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h1 class="text-darkest font-bold">Vanilla Panna Cotta</h1>
+                  <div class="flex gap-3">
+                    <p class="text-customRed font-bold">
+                      <!-- items selected -->
+                      <span class="items-selected-9 items-selected"></span>x
+                    </p>
+                    <p class="text-dark">
+                      @ $<span class="price-1 price">6.50</span>
+                    </p>
+                    <!-- total-cal -->
+                    <p class="text-darkest text-opacity-70 font-semibold">
+                      $<span class="total-cal-9 total-cal"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-auto">
+                  <!-- close -->
+                  <img
+                    src="assets/images/icon-remove-item.svg"
+                    class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full close-9 close"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+            <!-- Grand total -->
+            <div class="flex justify-between py-2 items-center">
+              <p class="text-darkest text-xl">Order Total</p>
+              <span class="text-4xl text-darkest font-bold"
+                >$<span class="grand-total">0.00</span></span
+              >
+            </div>
+            <div
+              class="bg-lightest py-4 rounded-xl flex items-center justify-center gap-2"
+            >
+              <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+              <p>This is a <span>carbon-neutral</span> delivery</p>
+            </div>
+            <button
+              class="bg-orange-700 hover:bg-opacity-90 transition-all ease-in-out duration-700 rounded-full py-3 font-medium text-white text-opacity-90 confirm-order-btn"
+            >
+              Confirm Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- order confirmed -->
+    <div
+      class="bg-black bg-opacity-80 backdrop-blur-md flex md:justify-center md:items-center absolute w-screen h-screen hidden order-confirmed md:inset-0 bottom-0 left-0"
+    >
+      <div
+        class="bg-white flex flex-col md:p-6 p-4 rounded-lg gap-4 mt-auto md:mt-0 md:w-1/3 w-full"
+      >
+        <img
+          src="assets/images/icon-order-confirmed.svg"
+          class="h-10 w-10"
+          alt=""
+        />
+        <h1 class="text-start text-3xl font-bold text-darkest">
+          Order confirmed
+        </h1>
+        <p class="text-dark text-opacity-80">We hope you enjoy your food</p>
+        <!-- Cart Display -->
+        <div class="w-full flex flex-col gap-4 cart-display">
+          <!-- Items -->
+          <div class="max-h-64 overflow-y-auto bg-lightest">
+            <!-- Cart item - 1 -->
+            <div
+              class="flex items-center hidden order-items--1 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-waffle-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Waffle with Berries</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <span class="order-items-selected-1 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">6.50</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-1 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- item2 -->
+            <div
+              class="flex items-center hidden order-items--2 adding-items--2 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-creme-brulee-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">
+                  Vanilla Bean Crème Brûlée
+                </h1>
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <span class="order-items-selected-2 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-2 price">7.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-2 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 3 -->
+            <div
+              class="flex items-center hidden order-items--3 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-macaron-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Macaron Mix of Five</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <span class="order-items-selected-3 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">8.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-3 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 4 -->
+            <div
+              class="flex items-center hidden order-items--4 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-tiramisu-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Classic Tiramisu</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-4 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">5.50</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-4 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 5 -->
+            <div
+              class="flex items-center hidden order-items--5 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-baklava-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Pistachio Baklava</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-5 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">4.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-5 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 6 -->
+            <div
+              class="flex items-center hidden order-items--6 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-meringue-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Lemon Meringue Pie</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-6 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">5.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-6 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 7 -->
+            <div
+              class="flex items-center hidden order-items--7 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-cake-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Red Velvet Cake</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-7 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">4.50</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-7 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 8 -->
+            <div
+              class="flex items-center hidden order-items--8 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-brownie-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Salted Caramel Brownie</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-8 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">5.50</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-8 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Cart item - 9 -->
+            <div
+              class="flex items-center hidden order-items--9 adding-items border-b p-4"
+            >
+              <img
+                src="assets/images/image-panna-cotta-thumbnail.jpg"
+                class="h-10 w-10 mr-5"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <h1 class="text-darkest font-bold">Vanilla Panna Cotta</h1>
+
+                <div class="flex gap-3">
+                  <p class="text-customRed font-bold">
+                    <!-- items-selected -->
+                    <span class="order-items-selected-9 items-selected"></span>x
+                  </p>
+                  <p class="text-dark">
+                    @ $<span class="price-1 price">6.50</span>
+                  </p>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <!-- total-cal -->
+                <p class="text-darkest text-opacity-70 font-semibold">
+                  $<span class="order-total-cal-9 total-cal"></span>
+                </p>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <p class="text-darkest">Order Total</p>
+            <span class="text-2xl text-darkest font-bold"
+              >$<span class="order-grand-total">0.00</span></span
+            >
+          </div>
+          <button
+            class="bg-orange-700 hover:bg-opacity-90 transition-all ease-in-out duration-700 rounded-full py-3 font-medium text-white text-opacity-90"
+          >
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
